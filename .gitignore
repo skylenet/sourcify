@@ -24,3 +24,12 @@ logs
 chain-tests-report/
 coverage
 !src/server/controllers/repository
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+
+# Compiled Helm chart dependencies
+infra/charts/**/Chart.lock
+infra/charts/**/charts/
