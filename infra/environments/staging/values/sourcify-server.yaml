@@ -1,0 +1,2 @@
+env:
+  IPFS_GATEWAY: http://cluster-ipfs-gateway-api:9095/ipfs/

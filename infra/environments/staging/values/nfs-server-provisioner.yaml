@@ -1,0 +1,5 @@
+persistence:
+  enabled: false
+  storageClass: "hostpath"
+  accessMode: ReadWriteOnce
+  size: 10Gi

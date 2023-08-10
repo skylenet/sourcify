@@ -1,0 +1,27 @@
+replicaCount: 2
+
+cluster:
+  image:
+    repository: ipfs/ipfs-cluster
+    pullPolicy: IfNotPresent
+    tag: "1.0.6"
+    resources: {}
+    nodeSelector: {}
+    tolerations: []
+    affinity: {}
+  storage:
+    storageClassName: "hostpath"
+    volumeSize: "10Gi"
+
+ipfs:
+  image:
+    repository: ipfs/kubo
+    pullPolicy: IfNotPresent
+    tag: "v0.21.0"
+    resources: {}
+    nodeSelector: {}
+    tolerations: []
+    affinity: {}
+  storage:
+    storageClassName: "hostpath"
+    volumeSize: "10Gi"
